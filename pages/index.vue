@@ -110,8 +110,8 @@ const highlightImages = [
 ];
 
 const additionalImages = [
-  { src: "/ex-3.jpg", alt: "Description 3", caption: "Additional 1" },
-  { src: "/ex-4.jpg", alt: "Description 4", caption: "Additional 2" },
+  { src: "pictures/ex-5.jpg", alt: "Description 3", caption: "Additional 1" },
+  { src: "pictures/ex-6.jpg", alt: "Description 4", caption: "Additional 2" },
   { src: "pictures/ex-8.jpg", alt: "Description 8", caption: "Additional 3" },
   { src: "pictures/ex-9.jpg", alt: "Description 9", caption: "Additional 4" },
   { src: "pictures/ex-10.jpg", alt: "Description 10", caption: "Additional 5" },

@@ -23,20 +23,29 @@
             tabindex="0"
             class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-sepia rounded-box w-52"
           >
-            <li><a href="/">Home</a></li>
-            <li><a href="/gallery">Gallery</a></li>
+            <li>
+              <NuxtLink to="/" class="text-xl font-sans">Home</NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/gallery" class="text-xl font-sans"
+                >Gallery</NuxtLink
+              >
+            </li>
           </ul>
         </div>
-
-        <a href="/" class="btn btn-ghost normal-case text-2xl font-mono">
+        <NuxtLink to="/" class="btn btn-ghost normal-case text-2xl font-mono">
           <CameraIcon class="h-8 w-8" />
-          Focal_DEV</a
+          Focal_DEV</NuxtLink
         >
       </div>
       <div class="navbar-end hidden lg:flex">
         <ul class="menu menu-horizontal px-1">
-          <li><a href="/" class="text-xl font-sans">Home</a></li>
-          <li><a href="/gallery" class="text-xl font-sans">Gallery</a></li>
+          <li>
+            <NuxtLink to="/" class="text-xl font-sans">Home</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/gallery" class="text-xl font-sans">Gallery</NuxtLink>
+          </li>
         </ul>
       </div>
     </div>

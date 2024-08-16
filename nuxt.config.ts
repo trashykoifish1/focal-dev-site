@@ -11,6 +11,7 @@ export default defineNuxtConfig({
   plugins: ["~/plugins/heroicons.js"],
   app: {
     head: {
+      title: "Focal_DEV",
       link: [
         {
           rel: "stylesheet",
@@ -18,5 +19,6 @@ export default defineNuxtConfig({
         },
       ],
     },
+    baseURL: "/focal-dev-site/",
   },
 });

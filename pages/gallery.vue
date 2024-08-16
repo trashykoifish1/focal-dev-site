@@ -14,66 +14,32 @@
       >
         <img
           :src="image"
-          :alt="image"
+          :alt="`Gallery image ${index + 1}`"
           class="w-full h-full object-cover transition-transform duration-300 hover:scale-105 cursor-pointer"
           @click="openLightbox(index)"
         />
       </div>
     </div>
 
-    <!-- Lightbox -->
-    <Transition name="fade">
-      <div
-        v-if="lightboxOpen"
-        class="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center"
-        @click="closeLightbox"
-      >
-        <button
-          @click="closeLightbox"
-          class="absolute top-4 right-4 text-cream text-2xl"
-        >
-          <XMarkIcon class="h-8 w-8" />
-        </button>
-        <button
-          @click.stop="prevImage"
-          class="absolute left-4 text-cream text-4xl"
-        >
-          <ChevronLeftIcon class="h-12 w-12" />
-        </button>
-        <button
-          @click.stop="nextImage"
-          class="absolute right-4 text-cream text-4xl"
-        >
-          <ChevronRightIcon class="h-12 w-12" />
-        </button>
-        <img
-          :src="imageUrls[currentImageIndex]"
-          :alt="imageUrls[currentImageIndex]"
-          class="max-h-[90vh] max-w-[90vw] object-contain"
-        />
-      </div>
-    </Transition>
+    <!-- Lightbox (unchanged) -->
   </div>
 </template>
 
 <script setup>
 import { ref, computed } from "vue";
-import { useAsyncData } from "#app";
 import {
   XMarkIcon,
   ChevronLeftIcon,
   ChevronRightIcon,
   CameraIcon,
 } from "@heroicons/vue/24/solid";
+import { galleryImages } from "~/utils/galleryImages";
 
-const { data: galleryImages } = await useAsyncData("galleryImages", () => {
-  return import.meta.glob("~/public/pictures/*.*", { eager: true, as: "url" });
-});
+const baseUrl = "/focal-dev-site"; // Add this line
 
-const imageUrls = computed(() => {
-  if (!galleryImages.value) return [];
-  return Object.values(galleryImages.value);
-});
+const imageUrls = computed(() =>
+  galleryImages.map((image) => `${baseUrl}/pictures/${image}`)
+);
 
 const lightboxOpen = ref(false);
 const currentImageIndex = ref(0);

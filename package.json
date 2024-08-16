@@ -5,7 +5,7 @@
   "scripts": {
     "generate-gallery": "node scripts/generateGalleryImages.js",
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "npm run generate-gallery && nuxt dev",
     "generate": "npm run generate-gallery && nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
@@ -19,8 +19,10 @@
     "daisyui": "^4.12.10",
     "nuxt": "^3.12.4",
     "postcss": "^8.4.41",
+    "swiper": "^11.1.9",
     "tailwindcss": "^3.4.10",
-    "vue": "latest"
+    "vue": "latest",
+    "vue3-carousel": "^0.3.3"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.12.1",

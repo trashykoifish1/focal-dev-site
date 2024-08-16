@@ -34,7 +34,7 @@
       <Bars3Icon class="h-10 w-10 text-sepia" />
     </div>
 
-    <section class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-10">
+    <section class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10 mx-5">
       <PolaroidCard
         v-for="(image, index) in additionalImages"
         :key="index"
@@ -97,24 +97,42 @@ import PolaroidCard from "~/components/PolaroidCard.vue";
 const highlightImages = [
   {
     src: "highlight/hl-1.jpg",
-    alt: "Description 1",
+    alt: "Picture of a basketball court, with the basket in the center, with trees in the foreground, framing the court.",
     caption:
       "Pocket Dispo / This was taken the week before my internship started. I was scared I won't get the chance to use my camera for a while.",
   },
   {
     src: "highlight/hl-2.jpg",
-    alt: "Description 2",
+    alt: "Picture of a tree scattered with white flowers, with a blue sky in the background.",
     caption:
       "Pocket Dispo / So I decided to take a scooter ride around my neighborhood with my new cheap lens out for a spin.",
   },
 ];
 
 const additionalImages = [
-  { src: "pictures/ex-5.jpg", alt: "Description 3", caption: "Additional 1" },
-  { src: "pictures/ex-6.jpg", alt: "Description 4", caption: "Additional 2" },
-  { src: "pictures/ex-8.jpg", alt: "Description 8", caption: "Additional 3" },
-  { src: "pictures/ex-9.jpg", alt: "Description 9", caption: "Additional 4" },
-  { src: "pictures/ex-10.jpg", alt: "Description 10", caption: "Additional 5" },
-  { src: "pictures/ex-11.jpg", alt: "Description 10", caption: "Additional 6" },
+  {
+    src: "highlight/hl-3.jpg",
+    alt: "Vietnam District 1 city skyline",
+    caption:
+      "This was taken in Vietnam. It was one of my favorite spots. A lot of memories here.",
+  },
+  {
+    src: "highlight/hl-4.jpg",
+    alt: "Phoenix freeway with lightstreaks from cars, captured using long exposure.",
+    caption:
+      "A long exposure shot of the I10. Night photography was never my strong suit.",
+  },
+  {
+    src: "highlight/hl-5.jpg",
+    alt: "Tiffany Day performing on stage. The stage is filled with smoke with light penetrating through the smoke creating god rays.",
+    caption:
+      "ASU Culturefest 2023. Tiffany Day and Thuy were the headliners. Still don't like how the pic turns out so grainy though.",
+  },
+  {
+    src: "highlight/hl-6.jpg",
+    alt: "A black and white photo of the sky and clouds.",
+    caption:
+      "For some reason I love the way the clouds look in black and white edits.",
+  },
 ];
 </script>

@@ -1,24 +1,17 @@
 <template>
-  <div class="container mx-auto px-4 bg-cream min-h-screen">
+  <div class="container mx-auto px-4 bg-cream">
     <h1 class="text-4xl font-serif text-sepia mb-8 pt-8 text-center">
       Photo Gallery
     </h1>
     <div class="divider divider-accent">
       <CameraIcon class="h-10 w-10 text-sepia" />
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div
-        v-for="(image, index) in galleryImages"
-        :key="image"
-        class="aspect-square overflow-hidden rounded-lg shadow-lg"
-      >
-        <img
-          :src="`${baseUrl}/pictures/${image}`"
-          :alt="`Gallery image ${index + 1}`"
-          class="w-full h-full object-cover transition-transform duration-300 hover:scale-105 cursor-pointer"
-          @click="openLightbox(index)"
-        />
-      </div>
+    <div class="max-w-screen-lg mx-auto">
+      <CarouselGallery
+        :images="galleryImages"
+        :baseUrl="baseUrl"
+        @open-lightbox="openLightbox"
+      />
     </div>
 
     <!-- Lightbox -->
@@ -69,6 +62,7 @@ import {
   CameraIcon,
 } from "@heroicons/vue/24/solid";
 import { galleryImages } from "~/utils/galleryImages";
+import CarouselGallery from "~/components/CarouselGallery.vue";
 
 const baseUrl = "/focal-dev-site"; // Make sure this matches your deployment URL
 

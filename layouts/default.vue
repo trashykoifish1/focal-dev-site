@@ -1,23 +1,14 @@
+<script setup lang="ts">
+import { Bars4Icon } from "@heroicons/vue/24/solid";
+</script>
+
 <template>
   <div class="min-h-screen flex flex-col bg-cream">
     <div class="navbar sticky top-0 z-50 bg-sepia text-cream shadow-md">
       <div class="navbar-start">
         <div class="dropdown">
-          <label tabindex="0" class="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
+          <label tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <Bars4Icon class="h-8 w-8" />
           </label>
           <ul
             tabindex="0"

@@ -47,11 +47,40 @@
     <div class="divider divider-accent">
       <h2 class="text-3xl font-mono text-sepia">Current Tech Stack</h2>
     </div>
-
     <section
-      class="grid grid-cols-2 md:grid-cols-1 gap-4 mb-12 mt-10 prose lg:prose-xl mx-auto font-mono text-cream"
+      class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10 mt-10 mx-auto font-mono text-cream"
     >
-      <div class="mockup-browser bg-base-300 border">
+      <div class="mockup-code">
+        <pre data-prefix="$"><code>./frontend</code></pre>
+        <pre data-prefix=">" class="text-warning"><code>vue.js</code></pre>
+        <pre data-prefix=">" class="text-warning"><code>nuxt.js</code></pre>
+        <pre data-prefix=">" class="text-warning"><code>tailwindcss</code></pre>
+        <pre data-prefix=">" class="text-warning"><code>daisyui</code></pre>
+        <pre data-prefix=">" class="text-warning"><code>vuetify</code></pre>
+        <pre data-prefix=">" class="text-success"><code>done...</code></pre>
+      </div>
+      <div class="mockup-code">
+        <pre data-prefix="$"><code>./backend</code></pre>
+        <pre
+          data-prefix=">"
+          class="text-warning"
+        ><code>springboot | java</code></pre>
+        <pre
+          data-prefix=">"
+          class="text-warning"
+        ><code>django | python</code></pre>
+        <pre
+          data-prefix=">"
+          class="text-warning"
+        ><code>postgresql && sqlite</code></pre>
+        <pre data-prefix=">" class="text-warning"><code>docker</code></pre>
+        <pre
+          data-prefix=">"
+          class="text-warning"
+        ><code>aks && openshift | kubernetes</code></pre>
+        <pre data-prefix=">" class="text-success"><code>done...</code></pre>
+      </div>
+      <!-- <div class="mockup-browser bg-base-300 border">
         <div class="mockup-browser-toolbar">
           <div class="input text-xl text-cream">Frontend</div>
         </div>
@@ -78,14 +107,7 @@
             <li>Kubernetes</li>
           </ul>
         </div>
-      </div>
-      <!-- <p class="text-sepia text-center font-mono">
-
-        <ul class="list-none text-sepia font-mono">
-          <li> Backend: Java, Spring Boot, Python, Django, PostgreSQL, Docker</li>
-          <li>Frontend: Vue3, Nuxt3, Vuetify, Tailwind CSS, DaisyUI</li>
-        </ul>
-      </p> -->
+      </div> -->
     </section>
   </div>
 </template>
@@ -111,7 +133,7 @@ const highlightImages = [
 
 const additionalImages = [
   {
-    src: "highlight/hl-3.jpg",
+    src: "highlight/hl-3.JPG",
     alt: "Vietnam District 1 city skyline",
     caption:
       "This was taken in Vietnam. It was one of my favorite spots. A lot of memories here.",

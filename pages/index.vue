@@ -80,41 +80,18 @@
         ><code>aks && openshift | kubernetes</code></pre>
         <pre data-prefix=">" class="text-success"><code>done...</code></pre>
       </div>
-      <!-- <div class="mockup-browser bg-base-300 border">
-        <div class="mockup-browser-toolbar">
-          <div class="input text-xl text-cream">Frontend</div>
-        </div>
-        <div class="bg-base-200 flex justify-left text-cream">
-          <ul class="list-none">
-            <li>Vue3</li>
-            <li>Nuxt3</li>
-            <li>Vuetify</li>
-            <li>Tailwind CSS</li>
-            <li>DaisyUI</li>
-          </ul>
-        </div>
-      </div>
-      <div class="mockup-browser bg-base-300 border">
-        <div class="mockup-browser-toolbar">
-          <div class="input text-xl text-cream">Backend</div>
-        </div>
-        <div class="bg-base-200 flex justify-left text-cream">
-          <ul class="list-none">
-            <li>Spring Boot (Java)</li>
-            <li>Django (Python)</li>
-            <li>PostgreSQL, SQLite</li>
-            <li>Docker</li>
-            <li>Kubernetes</li>
-          </ul>
-        </div>
-      </div> -->
     </section>
+    <div class="divider divider-accent">
+      <h2 class="text-3xl font-serif text-sepia">Get In Touch</h2>
+    </div>
+    <ContactSection />
   </div>
 </template>
 
 <script setup>
 import { Bars3Icon, CodeBracketIcon } from "@heroicons/vue/24/solid";
 import PolaroidCard from "~/components/PolaroidCard.vue";
+import ContactSection from "~/components/ContactSection.vue";
 
 const highlightImages = [
   {

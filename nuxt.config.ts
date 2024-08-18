@@ -17,6 +17,7 @@ export default defineNuxtConfig({
           rel: "stylesheet",
           href: "https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Slab&family=Caveat&display=swap",
         },
+        { rel: "icon", type: "image/svg+xml", href: "logo.svg" },
       ],
     },
     baseURL: "/focal-dev-site/",

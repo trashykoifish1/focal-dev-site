@@ -47,40 +47,36 @@
     <div class="divider divider-accent">
       <h2 class="text-3xl font-mono text-sepia">Current Tech Stack</h2>
     </div>
-    <section
+    <div
       class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10 mt-10 mx-auto font-mono text-cream"
     >
-      <div class="mockup-code">
-        <pre data-prefix="$"><code>./frontend</code></pre>
-        <pre data-prefix=">" class="text-warning"><code>vue.js</code></pre>
-        <pre data-prefix=">" class="text-warning"><code>nuxt.js</code></pre>
-        <pre data-prefix=">" class="text-warning"><code>tailwindcss</code></pre>
-        <pre data-prefix=">" class="text-warning"><code>daisyui</code></pre>
-        <pre data-prefix=">" class="text-warning"><code>vuetify</code></pre>
-        <pre data-prefix=">" class="text-success"><code>done...</code></pre>
-      </div>
-      <div class="mockup-code">
-        <pre data-prefix="$"><code>./backend</code></pre>
-        <pre
-          data-prefix=">"
-          class="text-warning"
-        ><code>springboot | java</code></pre>
-        <pre
-          data-prefix=">"
-          class="text-warning"
-        ><code>django | python</code></pre>
-        <pre
-          data-prefix=">"
-          class="text-warning"
-        ><code>postgresql && sqlite</code></pre>
-        <pre data-prefix=">" class="text-warning"><code>docker</code></pre>
-        <pre
-          data-prefix=">"
-          class="text-warning"
-        ><code>aks && openshift | kubernetes</code></pre>
-        <pre data-prefix=">" class="text-success"><code>done...</code></pre>
-      </div>
-    </section>
+      <TerminalMockup
+        command="./frontend"
+        :outputLines="[
+          { prefix: '>', class: 'text-warning', text: 'vuejs' },
+          { prefix: '>', class: 'text-warning', text: 'nuxtjs' },
+          { prefix: '>', class: 'text-warning', text: 'tailwindcss' },
+          { prefix: '>', class: 'text-warning', text: 'daisyui' },
+          { prefix: '>', class: 'text-warning', text: 'vuetify' },
+          { prefix: '>', class: 'text-success', text: 'done...' },
+        ]"
+      />
+      <TerminalMockup
+        command="./backend"
+        :outputLines="[
+          { prefix: '>', class: 'text-warning', text: 'springboot || java' },
+          { prefix: '>', class: 'text-warning', text: 'django || python' },
+          { prefix: '>', class: 'text-warning', text: 'relational database' },
+          { prefix: '>', class: 'text-warning', text: 'docker' },
+          {
+            prefix: '>',
+            class: 'text-warning',
+            text: 'aks && openshift || kubernetes',
+          },
+          { prefix: '>', class: 'text-success', text: 'done...' },
+        ]"
+      />
+    </div>
     <div class="divider divider-accent">
       <h2 class="text-3xl font-serif text-sepia">Get In Touch</h2>
     </div>

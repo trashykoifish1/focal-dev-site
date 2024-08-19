@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as s,a as o}from"./04-nSiJk.js";const r={},c={class:"prose lg:prose-xl"},n=o("h2",null,"About Me",-1),a=o("p",null,"Write a brief introduction about yourself and your photography here.",-1),_=[n,a];function i(l,d){return s(),t("div",c,_)}const h=e(r,[["render",i]]);export{h as default};

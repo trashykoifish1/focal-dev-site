@@ -14,7 +14,7 @@
     <div class="p-2 text-center">
       <!-- Fixed height to prevent layout shift -->
       <p
-        class="text-2xl min-h-[6rem] text-gray-700 font-handwriting font-extrabold"
+        class="text-2xl min-h-[8rem] text-gray-700 font-handwriting font-extrabold"
       >
         {{ displayedCaption }}
       </p>
@@ -53,7 +53,7 @@ function startWriting() {
     } else {
       clearInterval(writeInterval);
     }
-  }, 100); // Adjust timing as needed
+  }, 50); // Adjust timing as needed
 }
 
 function pauseWriting() {

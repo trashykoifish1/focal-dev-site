@@ -13,7 +13,9 @@
     </div>
     <div class="p-2 text-center">
       <!-- Fixed height to prevent layout shift -->
-      <p class="text-2xl text-gray-700 font-handwriting font-extrabold">
+      <p
+        class="text-2xl min-h-[6rem] text-gray-700 font-handwriting font-extrabold"
+      >
         {{ displayedCaption }}
       </p>
     </div>

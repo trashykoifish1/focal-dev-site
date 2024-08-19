@@ -51,6 +51,7 @@
       class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10 mt-10 mx-auto font-mono text-cream"
     >
       <TerminalMockup
+        class="min-h-[260px]"
         command="./frontend"
         :outputLines="[
           { prefix: '>', class: 'text-warning', text: 'vuejs' },
@@ -62,6 +63,7 @@
         ]"
       />
       <TerminalMockup
+        class="min-h-[260px]"
         command="./backend"
         :outputLines="[
           { prefix: '>', class: 'text-warning', text: 'springboot || java' },
